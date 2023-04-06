@@ -22,6 +22,7 @@ Alberta Biodiversity Monitoring Institute. (2018). Wall-to-Wall Human Footprint 
 Hall, D. K., & Riggs, G. A. (2021). MODIS/Terra Snow Cover 8-Day L3 Global 500m SIN Grid, Version 61 (MOD10A2). NASA National Snow and Ice Data Center Distributed Active Archive Center. https://doi.org/https://doi.org/10.5067/MODIS/MOD10A2.061
 
 Natural Resources Canada. (2021). CanVec Series - Moraine and talus surficial landforms. Topographic Data of Canada. https://atlas.gc.ca/toporama/en/ 
+
 UN Environment World Conservation Centre. (2021). World Database on Protected Areas. UNEP-WCMC and IUCN. www.protectedplanet.net.
 
 Pacific Climate Impacts Consortium. (2022). Gridded hydrologic model output: Snow water equivalent. ACCESS1-0 r1i1p1 RCP 8.5. https://pacificclimate.org/data/

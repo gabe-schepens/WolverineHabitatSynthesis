@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Schepens"
+  given-names: "Gabe"
+  orcid: "https://orcid.org/0000-0002-6809-4125"
+title: "WolverineHabitatSynthesis"
+version: 1.0.0
+doi: 10.5281/zenodo.7806630
+date-released: 2023-04-06
+url: "https://github.com/gabe-schepens/WolverineHabitatSynthesis"

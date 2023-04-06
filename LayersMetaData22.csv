@@ -1,0 +1,27 @@
+Name,file,description,source,transformations,URL
+,HABITAT RASTERS,,,,
+Conifer Cover,conifer10kmean.tif,cover of coniferous forest. >80% conifer,Canada Forest Landcover 2015. ,averaged over 10km radius to a 500m res,https://opendata.nfis.org/mapserver/nfis-change_eng.html
+Herb Cover,herb10kmean.tif,cover of herbaceous plants,Canada Forest Landcover 2015,averaged over 10km radius to a 500m res,https://opendata.nfis.org/mapserver/nfis-change_eng.html
+Shrub Cover,shrub10kmean.tif,cover of shrubs,Canada Forest Landcover 2015,averaged over 10km radius to a 500m res,https://opendata.nfis.org/mapserver/nfis-change_eng.html
+Mixedwood Cover,mixedwood10kmean.tif,cover of coniferous and broadleaf mixed forest,Canada Forest Landcover 2015,averaged over 10km radius to a 500m res,https://opendata.nfis.org/mapserver/nfis-change_eng.html
+Industrial features density,Industrial_density_10km.tif,"linear density of industrial features: Pipelines, seismic cutlines and transmission lines",Compiled from AB and BC public databases,km/km^2 over 10km radius to a 500m res,"https://www.abmi.ca/home/data-analytics/da-top/da-product-overview/Human-
+Footprint-Products/HF-inventory.html
+https://catalogue.data.gov.bc.ca/dataset/384d551b-dee1-4df8-8148-b3fcf865096a https://catalogue.data.gov.bc.ca/dataset/ecf567ea-4901-4f51-a5b0-35959ca96c47"
+motorized trails density,MotorizedTrails10km.tif,"linear density of motorized rec trails: ATV, OHV, and snowmobile ",Compiled from AB and BC public databases,km/km^2 over 10km radius to a 500m res,https://open.alberta.ca/dataset/gda-a80344fd-8510-4607-8959-ab1fd3724d70#detailed https://catalogue.data.gov.bc.ca/dataset/digital-road-atlas-dra-demographic-partially-attributed-roads
+Moraine density,moraines_10kmean.tif,"cover of moraine and talus surficial landforms, used as 'marmot habitat surrogate' in Kortello et al. 2019",Rasterized from CanVec 'moraine' landform,averaged over 10km radius to a 500m res,CanVec https://atlas.gc.ca/toporama/en/ 
+Protected Area Cover,ProtectedCover_10km.tif,% cover of protected area within 10km,World database of protected areas,% park cover over 10km radius to a 500m res,www.protectedplanet.net
+Resource road density,ResourceRd_density_10km.tif,linear density of resource roads: forestry service roads + oil/gas roads. Including restricted access,Compiled from AB and BC public databases,km/km^2 over 10km radius to a 500m res,"https://www.abmi.ca/home/data-analytics/da-top/da-product-overview/Human-
+Footprint-Products/HF-inventory.html https://catalogue.data.gov.bc.ca/dataset/digital-road-atlas-dra-demographic-partially-attributed-roads
+"
+Persistent Spring Snow Cover,Snow10kMean.tif,"Averaged snow cover of 2nd week of May over 2019, 2020 and 2021","MODIS/Terra Snow Cover 8-Day L3 Global 500m SIN Grid, Version 61",averaged over 10km radius to a 500m res,https://nsidc.org/data/MOD10A2
+,,,,,
+,,,,,
+,OUTPUT RASTERS,,,,
+,SynthHabPercentile.tif,"Distance-weighted mean of 4 models, which were compared as equal-area habitat values of 20 percentiles between 0.05 and 1",,,
+,WeightedCoefficientOfVariation.tif,Weighted Coefficient of Variation (SD / mean) of four model predictions as compared to synthesized mean raster above,,,
+,ModelAgreeance05.tif,"Model agreeance raster of cells with a value of >0.5 (often taken as ""present""). Output vals range from 0 (all models agree this cell is <0.5 ""poor"" habitat) to 4 (all models agree this cell is >0.5 ""good"" habitat). ",,,
+,,,,,
+,OTHER,,,,
+,RAST.tif,"Empty raster of study area to use as template. All data were resampled to this raster to ensure cells ""line up"" for further processing",,,
+,SWE2020binary.tif,"Calibrated ""snow water equivalent"" model raster for May 1 2020 from PCIC to a binomial 0/1 snow presence raster, based on comparisons to MODIS satelite data. ",Pacific Climate Impacts Consortium  ,see GULOPredict.R for calibration process,https://data.pacificclimate.org/
+,SWE2080_RCP85_binary.tif,"Same as above, but for RCP8.5 in May 1, 2080. ",Pacific Climate Impacts Consortium ,see GULOPredict.R for calibration process,https://data.pacificclimate.org/

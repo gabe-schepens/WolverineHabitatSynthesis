@@ -3,6 +3,7 @@
 Synthesis of habitat models for management of wolverine (Gulo gulo) 
 G. Schepens 2022
 --- 
+[![DOI](https://zenodo.org/badge/624565400.svg)](https://zenodo.org/badge/latestdoi/624565400)
 
 Dataset includes publicly-sourced environmental layers (.tiff) at 500m resolution, and code in a commented R script (.R) used to model wolverine habitat in the Columbia and Rocky Mountains, Canada for the above Schepens et al. manuscript. Metadata (.csv) for environmental and output layers are provided. 
 
